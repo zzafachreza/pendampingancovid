@@ -28,39 +28,80 @@ export default function ({navigation}) {
               color: colors.black,
               textAlign: 'center',
             }}>
-            Pengertian COVID - 19
+            TERIMA KASIH
           </Text>
         </View>
 
         <Text
           style={{
-            margin: 10,
-            fontFamily: fonts.secondary[400],
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
             fontSize: windowWidth / 25,
             color: colors.black,
-            textAlign: 'justify',
+            textAlign: 'center',
           }}>
-          {'   '}
-          Coronavirus adalah suatu kelompok virus yang dapat menyebabkan
-          penyakit pada hewan atau manusia. Beberapa jenis coronavirus diketahui
-          menyebabkan infeksi saluran nafas pada manusia mulai dari batuk pilek
-          hingga yang lebih serius seperti Middle East Respiratory Syndrome
-          (MERS) dan Severe Acute Respiratory Syndrome (SARS). Coronavirus jenis
-          baru yang ditemukan menyebabkan penyakit COVID-19.
+          Ns. Hendri Heriyanto, S.Kep.,M.Kep
         </Text>
         <Text
           style={{
-            margin: 10,
-            fontFamily: fonts.secondary[400],
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
             fontSize: windowWidth / 25,
             color: colors.black,
-            textAlign: 'justify',
+            textAlign: 'center',
           }}>
-          {'   '}
-          COVID-19 adalah penyakit menular yang disebabkan oleh jenis
-          coronavirus yang baru ditemukan. Ini merupakan virus baru dan penyakit
-          yang sebelumnya tidak dikenal sebelum terjadi wabah di Wuhan,
-          Tiongkok, bulan Desember 2019
+          Dahrizal, S.Kp.,MPH
+        </Text>
+        <Text
+          style={{
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
+            fontSize: windowWidth / 25,
+            color: colors.black,
+            textAlign: 'center',
+          }}>
+          Ns. Hermansyah, S.Kep.,M.Kep
+        </Text>
+        <Text
+          style={{
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
+            fontSize: windowWidth / 25,
+            color: colors.black,
+            textAlign: 'center',
+          }}>
+          Ns. Rahma Annisa, S.Kep.,M.Kep
+        </Text>
+        <Text
+          style={{
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
+            fontSize: windowWidth / 25,
+            color: colors.black,
+            textAlign: 'center',
+          }}>
+          Ns. Andra Saferi Wijaya, S.Kep.,M.Kep
+        </Text>
+        <Text
+          style={{
+            marginVertical: 5,
+            fontFamily: fonts.secondary[600],
+            fontSize: windowWidth / 25,
+            color: colors.black,
+            textAlign: 'center',
+          }}>
+          Sarkawi, S.Kom.,M.Kom
+        </Text>
+
+        <Text
+          style={{
+            marginTop: 50,
+            fontFamily: fonts.secondary[800],
+            fontSize: windowWidth / 15,
+            color: colors.black,
+            textAlign: 'center',
+          }}>
+          POLTEKKES KEMENKES BENGKULU
         </Text>
       </View>
       <View style={{flexDirection: 'row', backgroundColor: colors.white}}>
@@ -98,40 +139,7 @@ export default function ({navigation}) {
             </View>
           </TouchableOpacity>
         </View>
-        <View style={{flex: 1, padding: 10}}>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('MenuGejala')}
-            style={{
-              flexDirection: 'row',
-              backgroundColor: colors.primary,
-              height: 50,
-              padding: 10,
-            }}>
-            <View
-              style={{
-                flex: 1,
-                justifyContent: 'flex-start',
-                alignItems: 'flex-start',
-              }}>
-              <Text
-                style={{
-                  fontFamily: fonts.secondary[600],
-                  fontSize: windowWidth / 25,
-                  color: colors.white,
-                }}>
-                Next
-              </Text>
-            </View>
-            <View>
-              <Icon
-                type="ionicon"
-                name="arrow-forward-outline"
-                color={colors.white}
-                size={windowWidth / 18}
-              />
-            </View>
-          </TouchableOpacity>
-        </View>
+        <View style={{flex: 1, padding: 10}}></View>
       </View>
     </SafeAreaView>
   );

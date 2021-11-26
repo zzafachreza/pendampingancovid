@@ -16,6 +16,7 @@ export default function MyInput({
   styleInput,
   placeholder,
   autoFocus,
+  tinggi,
   multiline,
   label2,
   styleLabel,
@@ -66,7 +67,8 @@ export default function MyInput({
         autoCapitalize="none"
         style={{
           borderColor: colors.primary,
-          borderRadius: 10,
+          // borderRadius: 10,
+          height: tinggi,
           borderWidth: 1,
           paddingLeft: 10,
           color: colors.black,

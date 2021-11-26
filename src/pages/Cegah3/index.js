@@ -3,7 +3,7 @@ import {View, Text, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import {TextInput, ScrollView} from 'react-native-gesture-handler';
 import {Icon} from 'react-native-elements';
 import {fonts, windowWidth, colors} from '../../utils';
-import {MyButton, MyGap, MyInput} from '../../components';
+import {MyButton, MyGap, MyInput, MyHeader} from '../../components';
 
 import RNExitApp from 'react-native-exit-app';
 import {color} from 'react-native-elements/dist/helpers';
@@ -54,27 +54,7 @@ export default function ({navigation}) {
       style={{
         flex: 1,
       }}>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: colors.primary,
-          // borderBottomLeftRadius: windowWidth / 10,
-          // borderBottomRightRadius: windowWidth / 10,
-        }}>
-        <Text
-          style={{
-            fontFamily: fonts.secondary[600],
-            fontSize: windowWidth / 20,
-            color: colors.white,
-          }}>
-          Kesekolah Waspada
-        </Text>
-        <Image
-          source={require('../../assets/logo.png')}
-          style={{width: 120, height: 120}}
-        />
-      </View>
+      <MyHeader />
       <View style={{backgroundColor: colors.white, flex: 1}}>
         <View
           style={{

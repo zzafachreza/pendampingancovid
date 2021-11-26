@@ -22,6 +22,8 @@ import {
   Cegah4,
   Cegah2,
   Cegah3,
+  MenuTanya,
+  MenuNuhun,
 } from '../pages';
 
 const Stack = createStackNavigator();
@@ -87,6 +89,22 @@ export default function Router() {
       <Stack.Screen
         name="MenuPerisapan"
         component={MenuPerisapan}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="MenuTanya"
+        component={MenuTanya}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="MenuNuhun"
+        component={MenuNuhun}
         options={{
           headerShown: false,
         }}

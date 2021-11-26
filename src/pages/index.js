@@ -13,6 +13,8 @@ import Cegah3 from './Cegah3';
 import Cegah4 from './Cegah4';
 import Cegah5 from './Cegah5';
 import Cegah6 from './Cegah6';
+import MenuTanya from './MenuTanya';
+import MenuNuhun from './MenuNuhun';
 
 export {
   Splash,
@@ -29,4 +31,6 @@ export {
   Cegah4,
   Cegah5,
   Cegah6,
+  MenuTanya,
+  MenuNuhun,
 };

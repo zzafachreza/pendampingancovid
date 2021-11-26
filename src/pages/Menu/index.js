@@ -3,7 +3,7 @@ import {View, Text, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import {TextInput, ScrollView} from 'react-native-gesture-handler';
 import {Icon} from 'react-native-elements';
 import {fonts, windowWidth, colors} from '../../utils';
-import {MyButton, MyGap, MyInput} from '../../components';
+import {MyButton, MyGap, MyInput, MyHeader} from '../../components';
 
 import RNExitApp from 'react-native-exit-app';
 
@@ -50,32 +50,12 @@ export default function ({navigation}) {
       style={{
         flex: 1,
       }}>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: colors.primary,
-          // borderBottomLeftRadius: windowWidth / 10,
-          // borderBottomRightRadius: windowWidth / 10,
-        }}>
-        <Text
-          style={{
-            fontFamily: fonts.secondary[600],
-            fontSize: windowWidth / 20,
-            color: colors.white,
-          }}>
-          Kesekolah Waspada
-        </Text>
-        <Image
-          source={require('../../assets/logo.png')}
-          style={{width: 120, height: 120}}
-        />
-      </View>
+      <MyHeader />
       <View style={{padding: 10, backgroundColor: colors.white, flex: 1}}>
         <Text
           style={{
             fontFamily: fonts.secondary[400],
-            fontSize: windowWidth / 25,
+            fontSize: windowWidth / 26,
             color: colors.black,
             textAlign: 'justify',
           }}>
@@ -87,32 +67,42 @@ export default function ({navigation}) {
           waspada Covid-19 terutama ketika anak akan melakukan pembelajaran
           Offline dan berangkat ke sekolah.
         </Text>
-
+        <MyGap jarak={2} />
         <MyList
           judul="Pengertian COVID"
           onPress={() => navigation.navigate('MenuPengertian')}
         />
-        <MyGap jarak={10} />
+        <MyGap jarak={2} />
         <MyList
           judul="Gejala COVID"
           onPress={() => navigation.navigate('MenuGejala')}
         />
-        <MyGap jarak={10} />
+        <MyGap jarak={2} />
         <MyList
           judul="Penularan COVID"
           onPress={() => navigation.navigate('MenuPenularan')}
         />
-        <MyGap jarak={10} />
+        <MyGap jarak={2} />
         <MyList
           judul="Pencegahan COVID"
           onPress={() => navigation.navigate('MenuPencegahan')}
         />
-        <MyGap jarak={10} />
+        <MyGap jarak={2} />
         <MyList
           judul="Persiapan Sekolah"
           onPress={() => navigation.navigate('MenuPerisapan')}
         />
-        <MyGap jarak={10} />
+        <MyGap jarak={2} />
+        <MyList
+          judul="Kirim Pertanyaan"
+          onPress={() => navigation.navigate('MenuTanya')}
+        />
+        <MyGap jarak={2} />
+        <MyList
+          judul="Terima kasih"
+          onPress={() => navigation.navigate('MenuNuhun')}
+        />
+        <MyGap jarak={2} />
       </View>
       <View style={{flexDirection: 'row', backgroundColor: colors.white}}>
         <View style={{flex: 1, padding: 10}}>
